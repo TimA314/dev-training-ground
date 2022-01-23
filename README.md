@@ -4,7 +4,7 @@ This app is whatever the community decides.
 
 Vision: A react web app that new developers can put their skills to work and gain experience in the open source proccess. 
 
-New Devs: 
+New Devs: <br> 
       1. Create a route and a new page component.
       2. Build whatever you like. 
       3. Submit
