@@ -1,5 +1,7 @@
 # Dev Training Grounds
 
+## NEW DEVS WELCOME
+
 This app is whatever the community decides. 
 
 Vision: A react web app that new developers can put their skills to work and gain experience in the open source proccess. 
