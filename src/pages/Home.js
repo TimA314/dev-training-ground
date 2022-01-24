@@ -1,9 +1,12 @@
 import React from "react";
+import Navbar from "../navbar";
 import cloneRepoImage from "./../assets/images/cloneRepoImage.jpg";
 import routesImage from "./../assets/images/routesImage.jpg";
+
 export default function Home() {
   return (
     <>
+    <Navbar/>
       <h1>Dev Training Grounds</h1>
       <p>
         Put your skills to the test and help build a project with the community.
