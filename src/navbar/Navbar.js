@@ -1,7 +1,7 @@
 import React from "react";
 
-import Dropdown from '../dropdown/index'
-import "./index.css";
+import Dropdown from '../dropdown/Dropdown'
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
