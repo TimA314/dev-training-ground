@@ -1,6 +1,5 @@
 import ReactDOM from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./css/App.css";
 
 import Home from "./pages/Home";
 import TutorialSection from "./pages/TutorialSection";
@@ -14,6 +13,7 @@ export default function App() {
         </Routes>
       </BrowserRouter>
     </div>
+
   );
 }
 

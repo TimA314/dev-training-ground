@@ -5,11 +5,13 @@ import TutorialCard from "../components/TutorialCard";
 const TutorialSection = () => {
     return (
         <>
-            <div className="tutorial_section_container">
-                <TutorialCard />
-                <TutorialCard />
-                <TutorialCard />
-                <TutorialCard />
+            <div className="tutorial__container">
+                <div className="tutorial_card_container">
+                    <TutorialCard />
+                    <TutorialCard />
+                    <TutorialCard />
+                    <TutorialCard />
+                </div>
             </div>
         </>
     );
