@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "../navbar/Navbar";
 import ReactMarkdown from "react-markdown";
 import forkRepoImage from "./../assets/images/forkRepoImage.png";
-import Navbar from "../navbar";
 import cloneRepoImage from "./../assets/images/cloneRepoImage.jpg";
 import routesImage from "./../assets/images/routesImage.jpg";
 
