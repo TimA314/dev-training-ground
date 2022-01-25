@@ -1,6 +1,6 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
-import forkRepoImage from "./../assets/images/forkRepoImage.png"
+import forkRepoImage from "./../assets/images/forkRepoImage.png";
 import cloneRepoImage from "./../assets/images/cloneRepoImage.jpg";
 import routesImage from "./../assets/images/routesImage.jpg";
 export default function Home() {
@@ -23,17 +23,21 @@ export default function Home() {
 
   >  git clone <repo-url>
 
-  4. Create a file in pages directory showcasing your project.
+  4. Install dependencies by using the following command.
 
-  5. Add a route linking to your page in app.js.
+  > npm install
+
+  5. Create a file in pages/Projects directory showcasing your project.
+
+  6. Add a route linking to your page in app.js.
 
   ![Route image](${routesImage})
   
-  6. Create a pull request against the primary repo to be reviewed and implemented into the codebase.`
+  6. Create a pull request against the primary repo to be reviewed and implemented into the codebase.`;
 
   return (
     <>
       <ReactMarkdown children={markdown} />
-    </>  
+    </>
   );
 }
