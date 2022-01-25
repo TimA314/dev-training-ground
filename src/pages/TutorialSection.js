@@ -1,0 +1,20 @@
+import React from "react";
+import "../css/TutorialSection.css";
+import TutorialCard from "../components/TutorialCard";
+
+const TutorialSection = () => {
+    return (
+        <>
+            <div className="tutorial__container">
+                <div className="tutorial_card_container">
+                    <TutorialCard />
+                    <TutorialCard />
+                    <TutorialCard />
+                    <TutorialCard />
+                </div>
+            </div>
+        </>
+    );
+};
+
+export default TutorialSection;

@@ -1,0 +1,39 @@
+.card{
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 255);
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+}
+.card:hover{
+    box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.25);
+-webkit-box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.25);
+-moz-box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.25);
+
+transform: scale(1.02);
+}
+.card > p{
+text-align: justify;
+font-size: 15px;
+}
+
+.btn{
+    width: fit-content;
+    margin: auto;
+}
+
+@media  screen and (max-width: 1200px) {
+    .card > p{
+        font-size: 13px;
+    }
+    .card > h4{
+        font-size: 20px;
+    }
+    .btn{
+        font-size: 13px;
+    }
+}
