@@ -1,8 +1,10 @@
 import React from "react";
+import Navbar from "../navbar/Navbar";
 import ReactMarkdown from "react-markdown";
 import forkRepoImage from "./../assets/images/forkRepoImage.png";
 import cloneRepoImage from "./../assets/images/cloneRepoImage.jpg";
 import routesImage from "./../assets/images/routesImage.jpg";
+
 export default function Home() {
   const markdown = `# Dev Training Grounds
 
@@ -37,6 +39,7 @@ export default function Home() {
 
   return (
     <>
+      <Navbar/>
       <ReactMarkdown children={markdown} />
     </>
   );

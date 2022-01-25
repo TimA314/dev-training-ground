@@ -1,0 +1,31 @@
+.dropdown-container {
+  height: 100%;
+  position: relative;
+}
+
+.dropdown-title {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-list {
+  display: none;
+}
+
+.dropdown-container:hover .dropdown-list {
+  display: block;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  position: absolute;
+  right: -10px;
+}
+
+.dropdown-list div {
+  padding: 5px 10px;
+}
+
+.dropdown-list div:hover {
+    background-color: black;
+}
