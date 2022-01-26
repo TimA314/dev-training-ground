@@ -1,0 +1,42 @@
+#wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 30px;
+    background: #fafafa;
+    padding: 15px 25px;
+}
+.steps__container{
+    background: #ffff;
+    padding: 20px 25px;
+    border-radius: 3px;
+}
+.item .image__container{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.image__container > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+li {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.command{
+    background: rgba(14, 11, 11, 0.897);
+    color: #ffff;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    padding: 7px 12px;
+    border-radius: 3px;
+    font-size: 15px;
+}
