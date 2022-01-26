@@ -9,7 +9,8 @@ const Navbar = () => {
       <div className="navbar">
         <div className="navbar-logo">Dev Training Grounds</div>
         <ul>
-          <li>Home</li>
+         <a href="/"> <li>Home</li> </a>
+         <a href="/tutorial"> <li>Tutorials</li> </a>
           <li>
             <Dropdown
               title="Developer Projects"
