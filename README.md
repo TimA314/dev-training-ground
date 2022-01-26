@@ -32,4 +32,6 @@ Experienced Devs: Review code and give constructive feedback or show off a featu
 
 6. Create a pull request against the primary repo to be reviewed and implemented into the codebase.
 
+      NOTE: Please read the CONTRIBUTION.md file for guidlines.
+      
 ## Live site: https://dev-training-ground.web.app/
