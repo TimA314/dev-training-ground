@@ -30,6 +30,11 @@
     height: 100%;
 }
 
+.navbar ul a{
+    text-decoration: none;
+    height: 100%;
+}
+
 .navbar ul li {
     font-size: 15px;
     color: white;
@@ -38,6 +43,7 @@
     display: flex;
     align-items: center;
     padding: 0 10px;
+    margin-top: 0;
 }
 
 .navbar ul li:hover {

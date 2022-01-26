@@ -8,6 +8,10 @@
     align-items: center;
     justify-content: center;
     height: 350px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 .card:hover{
     box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.25);
@@ -15,6 +19,10 @@
 -moz-box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.25);
 
 transform: scale(1.02);
+}
+
+.card .card-title{
+    font-size: 20px;
 }
 .card > p{
 text-align: justify;
@@ -24,9 +32,15 @@ font-size: 15px;
 .btn{
     width: fit-content;
     margin: auto;
+    text-decoration: none;
+    font-size: 15px;
+    background: #2D0A64;
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 3px;
 }
 
-@media  screen and (max-width: 1200px) {
+@media  screen and (max-width: 900px) {
     .card > p{
         font-size: 13px;
     }
