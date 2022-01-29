@@ -1,6 +1,7 @@
 .dropdown-container {
   height: 100%;
   position: relative;
+  cursor: pointer;
 }
 
 .dropdown-title {
@@ -11,15 +12,20 @@
 
 .dropdown-list {
   display: none;
+  width: 100%;
 }
-
+.dropdown-item{
+  border-bottom: 1px solid #fff;
+  margin: 0;
+  border-radius: 3px;
+  font-size: 14px;
+}
 .dropdown-container:hover .dropdown-list {
   display: block;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
   position: absolute;
-  right: -10px;
 }
 
 .dropdown-list div {
