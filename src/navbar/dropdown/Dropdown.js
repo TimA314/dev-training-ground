@@ -7,7 +7,7 @@ const Dropdown = ({ title, items }) => {
       <div className="dropdown-title">{title}</div>
       <div className="dropdown-list">
         {items.map((item, i) => (
-          <div key={i}>{item}</div>
+          <div className="dropdown-item" key={i}>{item}</div>
         ))}
       </div>
     </div>

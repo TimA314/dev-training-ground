@@ -24,7 +24,7 @@
     height: 100%;
     object-fit: contain;
 }
-li {
+.steps__container > ol li {
     font-size: 20px;
     margin-top: 15px;
 }
