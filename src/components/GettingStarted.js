@@ -3,16 +3,18 @@ import "../css/GettingStarted.css";
 import forkRepoImage from "./../assets/images/forkRepoImage.png"
 import cloneRepoImage from "./../assets/images/cloneRepoImage.jpg";
 import routesImage from "./../assets/images/routesImage.jpg";
+import {useSelector} from "react-redux";
 
 
 const GettingStarted = () => {
+    const darkMode=useSelector((state)=>state.darkMode.value);
     const command = `git clone <repo-url>`;
 
     return (
         <>
-            <div id="wrapper">
-                <div className="steps__container">
-                    <h2>Getting Started</h2>
+            <div id={`wrapper`} className={`${darkMode ? "darkWrapper" : "lightWrapper"}`}>
+                <div className={`steps__container ${darkMode ? "darkStepsContainer" : "lightStepsContainer"}`}>
+                    <h2 >Getting Started</h2>
 
                     <ol>
                         <li className="item"><p>Fork this repo to create a copy on your github account. (This step makes creating a pull request easier)</p>
