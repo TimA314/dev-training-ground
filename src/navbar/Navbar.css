@@ -10,23 +10,25 @@
   -moz-box-shadow: 0px 14px 5px -10px rgba(0, 0, 0, 0.27);
   z-index: 10;
   position: relative;
-  transition: background-color 0.3s ease;
-}
-.dark {
-  background-color: #1a1919;
-}
-.light {
-  background-color: #fff;
 }
 
 .navbar {
-  position: absolute;
-  max-width: 1500px;
-  width: 90%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding: 10px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100%;
+  box-shadow: 0px 14px 5px -10px rgba(0, 0, 0, 0.27);
+  -webkit-box-shadow: 0px 14px 5px -10px rgba(0, 0, 0, 0.27);
+  -moz-box-shadow: 0px 14px 5px -10px rgba(0, 0, 0, 0.27);
+}
+.dark{
+  background-color: #1A1919;
+}
+.light{
+  background-color: #fff;
 }
 
 .navbar-logo {
@@ -38,6 +40,10 @@
   height: 100%;
   object-fit: contain;
 }
+.navbar-logo > .white{
+  filter: invert(100%);
+}
+
 
 .navbar ul {
   list-style: none;
@@ -51,8 +57,9 @@
   text-decoration: none;
   padding: 7px 10px;
   color: black;
-  transition: all 0.25s ease-in-out;
+  transition: all 0.2s ease-in-out;
   border-radius: 3px;
+  margin-right: 7px;
 }
 
 .navbar ul a:hover {
