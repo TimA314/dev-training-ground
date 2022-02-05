@@ -36,6 +36,7 @@
   height: 200px;
   display: flex;
   justify-content: center;
+  margin-top: 10px;
 }
 
 .image__container > img {
@@ -43,9 +44,12 @@
   height: 100%;
   object-fit: contain;
 }
+
 .steps__container > ol li {
   font-size: 20px;
   margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 10px;
 }
 .darkStepsContainer > ol li {
   color: #ffff;
@@ -64,6 +68,7 @@
   padding: 7px 12px;
   border-radius: 3px;
   font-size: 15px;
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 768px) {

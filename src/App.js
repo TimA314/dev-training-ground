@@ -1,6 +1,6 @@
 import ReactDOM from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import Contribute from "./components/Contribute";
 import Home from "./pages/Home";
 import TutorialSection from "./pages/TutorialSection";
 import { configureStore } from "@reduxjs/toolkit";
@@ -16,12 +16,13 @@ export default function App() {
   return (
     <div className="App">
       <Provider store={store}>
-        <BrowserRouter>
-          <Routes>
-            <Route index element={<Home />} />
-            <Route path="/tutorial" element={<TutorialSection />} />
-          </Routes>
-        </BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="/tutorial" element={<TutorialSection />} />
+          <Route path="/contribute" element={<Contribute />} />
+        </Routes>
+      </BrowserRouter>
       </Provider>
     </div>
   );

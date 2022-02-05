@@ -1,6 +1,5 @@
 .card {
   border-radius: 5px;
-
   padding: 10px 20px;
   cursor: pointer;
   transition: all 0.25s ease-in-out;
@@ -13,6 +12,13 @@
   flex-direction: column;
   justify-content: center;
 }
+
+.card:hover{
+  transform: scale(1.02);
+  box-shadow: -2px 2px 30px -9px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: -2px 2px 30px -9px rgba(0, 0, 0, 1);
+  -moz-box-shadow: -2px 2px 30px -9px rgba(0, 0, 0, 1);
+}
 .darkModeCard {
   background-color: #262626;
 }
@@ -20,17 +26,6 @@
   background-color: rgba(255, 255, 255, 255);
 }
 
-.darkModeCard:hover {
-  box-shadow: 5px 5px 5px 1px rgba(206, 206, 206, 0.25);
-  -webkit-box-shadow: 5px 5px 5px 1px rgba(206, 206, 206, 0.25);
-  -moz-box-shadow: 5px 5px 5px 1px rgba(206, 206, 206, 0.25);
-  transform: scale(1.02);
-}
-.lightModeCard:hover {
-  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.25);
-}
 .card .card-title {
   font-size: 20px;
   margin: 5px 10px;

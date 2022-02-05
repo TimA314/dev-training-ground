@@ -1,0 +1,20 @@
+
+.tutorial__container{
+    padding: 10px 40px;
+}
+
+.tutorial__wrapper{
+    border: 2px solid red;
+    width: 100%;
+}
+
+.content__container{
+    width: 100%;
+    margin-top: 20px;
+}
+.content__container > h2, p{
+    margin: 0;
+}
+.content__container > p{
+    font-size: 12px;
+}
