@@ -2,19 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import about from "../assets/images/aboutus.png";
 import point from "../assets/images/right.png";
-
-function Aboutus() {
+import courses from "../assets/images/courses.jpg"
+function Courses() {
   return (
     <>
       <Wrapper>
-        <LeftContainer>
-          <ImageContainer>
-            <Image src={about} />
-          </ImageContainer>
-        </LeftContainer>
-
-        <RightContainer>
-          <Heading>About Us</Heading>
+      <LeftContainer>
+          <Heading>Courses</Heading>
           <DataContainer>
             <Data>
               <PointContainer>
@@ -30,31 +24,42 @@ function Aboutus() {
                 <Point src={point} />
               </PointContainer>
               <Content>
-                We cover every topic in detail with a hands-on approach and
-                mentor you to stand out to get opportunities by breaking all the
-                barriers.
+              We cover every topic in detail with a hands-on approach and mentor you to stand out to get opportunities by breaking all the barriers.
               </Content>
             </Data>
           </DataContainer>
+          <Pricing>
+              <h2>Pricing:  0$/m</h2>
+          </Pricing>
+          <CoursesContainer href="/tutorial">
+            Explore our courses
+          </CoursesContainer>
+        </LeftContainer>
+
+        <RightContainer>
+          <ImageContainer>
+            <Image src={courses} />
+          </ImageContainer>
         </RightContainer>
       </Wrapper>
     </>
   );
 }
 
-export default Aboutus;
+export default Courses;
 
 const Wrapper = styled.div`
   display: flex;
   padding: 20px 30px;
   align-items: center;
+  background: #87D3F0;
   @media (max-width: 768px) {
     flex-direction: column;
   }
 `;
 
-// LEFT CONTAINER STYLING
-const LeftContainer = styled.div`
+// RIGHT CONTAINER STYLING
+const RightContainer = styled.div`
   flex: 1;
   @media (max-width: 768px) {
     display: none;
@@ -69,8 +74,8 @@ const Image = styled.img`
   object-fit: contain;
 `;
 
-// RIGHT CONTAINER STYLING
-const RightContainer = styled.div`
+// LEFT CONTAINER STYLING
+const LeftContainer = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -82,7 +87,7 @@ const Heading = styled.h1`
   text-align: center;
   font-size: 40px;
   position: relative;
-  color: #2e0b64;
+  color: #2E0B64;
   &:after {
     content: "";
     position: absolute;
@@ -90,7 +95,7 @@ const Heading = styled.h1`
     left: 0;
     right: 0;
     bottom: -10px;
-    background: #2e0b64;
+    background: #2E0B64;
     border-radius: 3px;
   }
   @media (min-width: 768px) {
@@ -124,7 +129,28 @@ const Content = styled.div`
   color: white;
   padding: 10px 15px;
   border-radius: 3px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px){
     font-size: 14px;
+  }
+`;
+
+const Pricing = styled.div`
+    margin: 7px 0px;
+`
+
+// CONTRIBUTE BUTTON STYLING
+const CoursesContainer = styled.a`
+  padding: 7px 12px;
+  font-size: 18px;
+  background: #1e88e5;
+  color: #ffff;
+  border: 0;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  text-decoration: none;
+
+  @media (max-width: 768px) {
+    font-size: 15px;
   }
 `;
