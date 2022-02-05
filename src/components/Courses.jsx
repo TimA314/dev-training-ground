@@ -52,7 +52,7 @@ const Wrapper = styled.div`
   display: flex;
   padding: 20px 30px;
   align-items: center;
-  background: #87D3F0;
+  background: #181818;
   @media (max-width: 768px) {
     flex-direction: column;
   }
@@ -87,7 +87,7 @@ const Heading = styled.h1`
   text-align: center;
   font-size: 40px;
   position: relative;
-  color: #2E0B64;
+  color: #fff;
   &:after {
     content: "";
     position: absolute;
@@ -95,7 +95,7 @@ const Heading = styled.h1`
     left: 0;
     right: 0;
     bottom: -10px;
-    background: #2E0B64;
+    background: #fff;
     border-radius: 3px;
   }
   @media (min-width: 768px) {
@@ -121,11 +121,12 @@ const Point = styled.img`
   height: 100%;
   width: 100%;
   object-fit: contain;
+  filter: invert(59%);
 `;
 const Content = styled.div`
   flex: 1;
   font-size: 18px;
-  background: #2e0b64;
+  background: #303030;
   color: white;
   padding: 10px 15px;
   border-radius: 3px;
@@ -136,13 +137,14 @@ const Content = styled.div`
 
 const Pricing = styled.div`
     margin: 7px 0px;
+    color: #fff;
 `
 
 // CONTRIBUTE BUTTON STYLING
 const CoursesContainer = styled.a`
   padding: 7px 12px;
   font-size: 18px;
-  background: #1e88e5;
+  background: #303030;
   color: #ffff;
   border: 0;
   border-radius: 5px;
