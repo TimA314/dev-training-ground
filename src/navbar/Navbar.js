@@ -25,6 +25,7 @@ const Navbar = () => {
             <li>Tutorials</li>{" "}
           </a>
           <a href="/contribute">Contribute</a>
+          <a href="/blogs">Blogs</a>
           
         </ul>
         <DarkModeToggle
