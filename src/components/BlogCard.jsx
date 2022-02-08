@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import arrow from "../assets/images/right-chevron.png";
 import { Bounce } from "react-awesome-reveal";
+import { Link } from "react-router-dom";
 
 function BlogCard({ title, link }) {
   return (
@@ -12,7 +13,9 @@ function BlogCard({ title, link }) {
             <Arrow src={arrow} />
             <BlogTitle>{title}</BlogTitle>
           </Content>
-          <BlogBtn href={link}>Learn</BlogBtn>
+          <BlogBtn>
+            <Link to={link}>Learn</Link>
+          </BlogBtn>
         </BlogTitleBar>
       </Bounce>
     </>
@@ -24,16 +27,14 @@ export default BlogCard;
 const BlogTitleBar = styled.div`
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 10px 15px;
-  justidy-content: space-between;
   margin: 26px 0px;
-  background: #fafafa;
+  background: #303030;
   border-radius: 5px;
   transition: all 0.2s ease-in-out;
-
-  border: 1px solid rgba(128, 128, 128, 0.3);
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.07);
   }
   @media screen and (max-width: 580px) {
     flex-direction: column;
@@ -47,11 +48,13 @@ const Arrow = styled.img`
   width: 20px;
   margin-right: 10px;
   padding-top: 3px;
+  filter: invert(100%);
 `;
 const BlogTitle = styled.p`
   display: inline-block;
   flex: 1;
   margin-right: 10px;
+  color: #ffff;
   @media screen and (max-width: 580px) {
     margin-right: 0px;
   }
@@ -66,14 +69,13 @@ const Content = styled.div`
 const BlogBtn = styled.a`
   margin-left: auto;
   background: #4865e5;
-  color: white;
   padding: 7px 18px;
   border-radius: 5px;
   cursor: pointer;
-  text-decoration: none;
   transition: all 0.2s ease-in-out;
-  &:hover {
-    transform: scale(1.05);
+  * {
+    text-decoration: none;
+    color: #fff;
   }
 
   @media screen and (max-width: 580px) {

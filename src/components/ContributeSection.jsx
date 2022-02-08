@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import octocat from "../assets/images/Octocat.png";
 
@@ -22,8 +23,8 @@ function ContributeSection() {
                 corrupti, a velit maiores ex recusandae unde veritatis
                 repudiandae illo numquam.
               </Desc>
-              <ContributeButton href="/contribute">
-                How to Contribute?
+              <ContributeButton>
+                <Link to="contribute">How to Contribute?</Link>
               </ContributeButton>
             </Data>
           </RightContainer>
@@ -89,7 +90,7 @@ const ImageContainer = styled.div`
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  background: #9CDAF0;
+  background: #9cdaf0;
   @media screen and (max-width: 650px) {
     display: none;
   }
@@ -125,6 +126,9 @@ const ContributeButton = styled.a`
   border-radius: 3px;
   cursor: pointer;
   margin-bottom: 7px;
-  text-decoration: none;
-  color: #fff;
+
+  * {
+    text-decoration: none;
+    color: #fff;
+  }
 `;
