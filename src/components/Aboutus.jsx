@@ -48,6 +48,7 @@ const Wrapper = styled.div`
   display: flex;
   padding: 20px 30px;
   align-items: center;
+  background-color: #F5F5F5;
   @media (max-width: 768px) {
     flex-direction: column;
   }
@@ -82,7 +83,7 @@ const Heading = styled.h1`
   text-align: center;
   font-size: 40px;
   position: relative;
-  color: #2e0b64;
+  color: #303030;
   &:after {
     content: "";
     position: absolute;
@@ -90,7 +91,7 @@ const Heading = styled.h1`
     left: 0;
     right: 0;
     bottom: -10px;
-    background: #2e0b64;
+    background: #303030;
     border-radius: 3px;
   }
   @media (min-width: 768px) {
@@ -99,6 +100,7 @@ const Heading = styled.h1`
 `;
 const DataContainer = styled.div`
   margin-top: 20px;
+  margin-left: 10px;
 `;
 const Data = styled.div`
   display: flex;
@@ -116,11 +118,12 @@ const Point = styled.img`
   height: 100%;
   width: 100%;
   object-fit: contain;
+  filter: invert(48%);
 `;
 const Content = styled.div`
   flex: 1;
   font-size: 18px;
-  background: #2e0b64;
+  background: #303030;
   color: white;
   padding: 10px 15px;
   border-radius: 3px;

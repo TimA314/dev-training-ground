@@ -10,7 +10,7 @@ const FirstLook = () => {
                         <div className="content">
                             <h1>Dev Training Grounds</h1>
                             <p>Put your skills to the test and help build a project with the community. Devs can create a webpage or feature and create a corresponding route linking to it.</p>
-                            <Link to="/tutorial">Explore more Tutorials</Link>
+                            <Link className="btn" to="/tutorial">Explore more Tutorials</Link>
                         </div>
                     </div>
                 </div>
