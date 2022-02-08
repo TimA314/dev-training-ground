@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import about from "../assets/images/aboutus.png";
 import point from "../assets/images/right.png";
-import courses from "../assets/images/courses.jpg"
+import courses from "../assets/images/courses.jpg";
+import { Link } from "react-router-dom";
 function Courses() {
   return (
     <>
       <Wrapper>
-      <LeftContainer>
+        <LeftContainer>
           <Heading>Courses</Heading>
           <DataContainer>
             <Data>
@@ -24,15 +24,17 @@ function Courses() {
                 <Point src={point} />
               </PointContainer>
               <Content>
-              We cover every topic in detail with a hands-on approach and mentor you to stand out to get opportunities by breaking all the barriers.
+                We cover every topic in detail with a hands-on approach and
+                mentor you to stand out to get opportunities by breaking all the
+                barriers.
               </Content>
             </Data>
           </DataContainer>
           <Pricing>
-              <h2>Pricing:  0$/m</h2>
+            <h2>Pricing: 0$/m</h2>
           </Pricing>
-          <CoursesContainer href="/tutorial">
-            Explore our courses
+          <CoursesContainer>
+            <Link to="/tutorial">Explore our courses</Link>
           </CoursesContainer>
         </LeftContainer>
 
@@ -130,27 +132,29 @@ const Content = styled.div`
   color: white;
   padding: 10px 15px;
   border-radius: 3px;
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     font-size: 14px;
   }
 `;
 
 const Pricing = styled.div`
-    margin: 7px 0px;
-    color: #fff;
-`
+  margin: 7px 0px;
+  color: #fff;
+`;
 
 // CONTRIBUTE BUTTON STYLING
 const CoursesContainer = styled.a`
-  padding: 7px 12px;
+  padding: 10px 20px;
   font-size: 18px;
   background: #303030;
-  color: #ffff;
   border: 0;
   border-radius: 5px;
   margin-top: 10px;
   cursor: pointer;
-  text-decoration: none;
+  * {
+    text-decoration: none;
+    color: #ffff;
+  }
 
   @media (max-width: 768px) {
     font-size: 15px;

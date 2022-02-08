@@ -5,36 +5,35 @@ import DarkModeToggle from "react-dark-mode-toggle";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { setDarkMode } from "../features/DarkMode";
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const darkMode = useSelector((state) => state.darkMode.value);
   const dispatch = useDispatch();
   return (
     <div className="navbar-container">
       <div className={`navbar ${darkMode ? "dark" : "light"}`}>
-        <a href="/">
+        <Link to="/">
           <div className="navbar-logo">
             <img className={`${darkMode ? "white" : ""}`} src={Logo} />
           </div>
-        </a>
+        </Link>
         <ul className={`${darkMode ? "navbarTextDark" : ""}`}>
-          <a href="/">
+          <Link to="/">
             <li>Home</li>
-          </a>
-          <a href="/tutorial">
+          </Link>
+          <Link to="/tutorial">
             <li>Tutorials</li>{" "}
-          </a>
-          <a href="/contribute">Contribute</a>
-          <a href="/blogs">Blogs</a>
-          
+          </Link>
+          <Link to="/contribute">Contribute</Link>
+          <Link to="/blogs">Blogs</Link>
         </ul>
         <DarkModeToggle
-            onChange={() => {
-              dispatch(setDarkMode(darkMode ? false : true));
-            }}
-            checked={darkMode}
-            size={50}
-          />
+          onChange={() => {
+            dispatch(setDarkMode(darkMode ? false : true));
+          }}
+          checked={darkMode}
+          size={50}
+        />
       </div>
     </div>
   );

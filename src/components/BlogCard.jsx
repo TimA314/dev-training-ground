@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import arrow from "../assets/images/right-chevron.png";
 import { Bounce } from "react-awesome-reveal";
-
+import {Link} from "react-router-dom";
 function BlogCard({ title, link }) {
   return (
     <>
@@ -12,7 +12,9 @@ function BlogCard({ title, link }) {
             <Arrow src={arrow} />
             <BlogTitle>{title}</BlogTitle>
           </Content>
-          <BlogBtn href={link}>Learn</BlogBtn>
+          <Link to={link}>
+          <BlogBtn>Learn</BlogBtn>
+          </Link>
         </BlogTitleBar>
       </Bounce>
     </>
@@ -63,7 +65,7 @@ const Content = styled.div`
   justify-content: center;
 `;
 
-const BlogBtn = styled.a`
+const BlogBtn = styled.span`
   margin-left: auto;
   background: #4865e5;
   color: white;
@@ -72,9 +74,6 @@ const BlogBtn = styled.a`
   cursor: pointer;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
-  &:hover {
-    transform: scale(1.05);
-  }
 
   @media screen and (max-width: 580px) {
     margin: 15px 0 0 auto;
