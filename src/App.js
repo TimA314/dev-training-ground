@@ -8,6 +8,7 @@ import { Provider } from "react-redux";
 import darkModeReducer from "./features/DarkMode";
 import ReactButtonTutorial from "./pages/Tutorials/ReactButtonTutorial";
 import BlogSection from "./pages/BlogSection";
+import PracticeSection from "./pages/PracticeSection";
 
 export default function App() {
   const store = configureStore({
@@ -24,6 +25,7 @@ export default function App() {
             <Route path="/tutorial" element={<TutorialSection />} />
             <Route path="/contribute" element={<Contribute />} />
             <Route path="/blogs" element={<BlogSection/>}></Route>
+            <Route path="/practice" element={<PracticeSection/>}/>
             <Route path="/react-button" element={<ReactButtonTutorial />} />
           </Routes>
         </BrowserRouter>
