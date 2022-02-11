@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import React  from "react";
 import Logo from "../assets/images/logo.png";
 import "./Navbar.css";
 import DarkModeToggle from "react-dark-mode-toggle";
@@ -23,6 +23,9 @@ const Navbar = () => {
           </Link>
           <Link to="/tutorial">
             <li>Tutorials</li>{" "}
+          </Link>
+          <Link to="/practice">
+            <li>Practice</li>
           </Link>
           <Link to="/contribute">Contribute</Link>
           <Link to="/blogs">Blogs</Link>
