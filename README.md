@@ -34,4 +34,8 @@ Experienced Devs: Review code and give constructive feedback or show off a featu
 
       NOTE: Please read the CONTRIBUTION.md file for guidlines.
       
+      
+ ## Link to Dev Training Ground Server Repo
+      https://github.com/TimA314/dev-training-ground-server
+      
 ## Live site: https://dev-training-ground.web.app/
