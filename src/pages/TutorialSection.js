@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./TutorialSection.css";
 import TutorialCard from "../components/TutorialCard";
 import Navbar from "../navbar/Navbar";
-import { Tutorial } from "../Data/Tutorial.js";
 import { useSelector } from "react-redux";
 import { getTutorials } from "../services/tutorialServices";
 
@@ -11,7 +10,9 @@ const TutorialSection = () => {
   const [tutorials, setTutorials] = useState([]);
 
   useEffect(() => {
-    getTutorials().then((res) => console.log(res));
+    getTutorials()
+      .then((res) => setTutorials(res.data.tutorials))
+      .catch((err) => console.log(err));
   }, []);
 
   return (
@@ -23,7 +24,7 @@ const TutorialSection = () => {
         }`}
       >
         <div className="tutorial_card_container">
-          {Tutorial.map((tutorial, key) => {
+          {tutorials.map((tutorial, key) => {
             return (
               <TutorialCard
                 key={key}
