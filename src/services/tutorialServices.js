@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const PORT = 8080;
-const endpoint = `http://localhost:${PORT}/tutorials`;
+const endpoint =
+  "https://dev-training-ground-server.herokuapp.com/api/v1/tutorials";
 
 let getTutorials = () => {
   const config = {
