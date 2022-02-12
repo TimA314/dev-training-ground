@@ -40,8 +40,6 @@ Experienced Devs: Review code and give constructive feedback or show off a featu
       
  ## Link to Dev Training Ground Server Repo
       https://github.com/TimA314/dev-training-ground-server
-      
-      Run Server using node index.js or nodemon index.js
-      ⚠️ If you come accross "Cross origin" errors make sure the originPort in the index.js file is the same port that the react project is running on
+
       
 ## Live site: https://dev-training-ground.web.app/
