@@ -35,6 +35,9 @@ Experienced Devs: Review code and give constructive feedback or show off a featu
       NOTE: Please read the CONTRIBUTION.md file for guidlines.
       
       
+### 💬 Connect with us on Discord https://discord.gg/ECRPfd3f
+      
+      
  ## Link to Dev Training Ground Server Repo
       https://github.com/TimA314/dev-training-ground-server
       
