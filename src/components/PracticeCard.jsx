@@ -59,8 +59,9 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: space-between;
   border-radius: 5px;
-  height: 300px;
+  min-height: 350px;
   background-color: ${(props) => props.theme.bg};
   color: #ffff;
   box-shadow: 1px 1px 15px -7px rgba(0, 0, 0, 0.8);
@@ -90,22 +91,24 @@ const Title = styled.h2`
   color: ${(props) => props.theme.bg};
 `;
 const MiddleSection = styled.div`
-  margin-top: 50px;
+margin: auto;
 `;
 
 const Description = styled.div`
+  text-align: center;
   font-size: 18px;
+  margin-bottom: 20px;
   color: ${(props) => props.theme.bg};
 `;
 const Score_Problem_Section = styled.div`
   display: flex;
   justify-content: space-around;
-  margin-top: 20px;
   color: ${(props) => props.theme.bg};
 `;
 const TotalProblems = styled.div`
   text-align: center;
   font-weight: 600;
+  margin-right: 30px;
 `;
 const TotalScore = styled.div`
   text-align: center;

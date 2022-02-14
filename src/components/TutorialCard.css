@@ -1,16 +1,13 @@
 .card {
   border-radius: 5px;
-  padding: 10px 20px;
+  padding: 25px 20px;
   cursor: pointer;
   transition: all 0.25s ease-in-out;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 350px;
   display: flex;
   align-items: center;
+  justify-content: space-around;
   flex-direction: column;
-  justify-content: center;
 }
 
 .card:hover{
@@ -28,22 +25,27 @@
 
 .card .card-title {
   font-size: 20px;
-  margin: 5px 10px;
+  text-align: center;
+  margin-top: 15px;
 }
 .card > p {
   text-align: justify;
   font-size: 15px;
+  flex: 1;
+  margin: 40px 0px;
+
+
 }
 
 .btn {
   width: fit-content;
-  margin: auto;
   text-decoration: none;
   font-size: 15px;
-  background: #2d0a64;
+  background: #4865E5;
   color: #fff;
   padding: 7px 15px;
   border-radius: 3px;
+  margin-top: auto;
 }
 
 .darkModeCard > p {

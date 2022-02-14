@@ -118,7 +118,7 @@ const Desc = styled.p`
   margin: 40px 0px;
   text-align: center;
 `;
-const ContributeButton = styled.a`
+const ContributeButton = styled.div`
   display: inline-block;
   text-align: center;
   border: 2px solid white;

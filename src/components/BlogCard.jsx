@@ -66,7 +66,7 @@ const Content = styled.div`
   justify-content: center;
 `;
 
-const BlogBtn = styled.a`
+const BlogBtn = styled.div`
   margin-left: auto;
   background: #4865e5;
   padding: 7px 18px;

@@ -19,13 +19,13 @@ const Navbar = () => {
         </Link>
         <ul className={`${darkMode ? "navbarTextDark" : ""}`}>
           <Link to="/">
-            <li>Home</li>
+            Home
           </Link>
           <Link to="/tutorial">
-            <li>Tutorials</li>{" "}
+            Tutorials
           </Link>
           <Link to="/practice">
-            <li>Practice</li>
+            Practice
           </Link>
           <Link to="/contribute">Contribute</Link>
           <Link to="/blogs">Blogs</Link>

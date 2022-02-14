@@ -40,7 +40,7 @@ export default BlogSection;
 const Wrapper = styled.div`
   padding: 70px 50px;
   background-color: ${(props) => props.theme.bg};
-  min-height: 70vh;
+  min-height: 100vh;
 `;
 const Heading = styled.h1`
   text-align: center;
