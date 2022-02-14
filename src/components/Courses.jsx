@@ -143,7 +143,7 @@ const Pricing = styled.div`
 `;
 
 // CONTRIBUTE BUTTON STYLING
-const CoursesContainer = styled.a`
+const CoursesContainer = styled.div`
   padding: 10px 20px;
   font-size: 18px;
   background: #303030;

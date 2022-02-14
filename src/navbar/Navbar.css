@@ -65,6 +65,7 @@
 .navbar ul a:hover {
   background-color: #000000;
   color: #fff;
+  transform: translate3d(0px, -5px, 0px);
 }
 
 .navbar .navbarTextDark a {
