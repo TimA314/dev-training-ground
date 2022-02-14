@@ -14,7 +14,7 @@ export default function ReactButtonTutorial() {
   }
 
   return (
-    <>
+    <div className="react-button__box">
       <div className="react-button__buttons">
         <button className="react-button__btn" onClick={clickHandler}>Click</button>
         <h1 className="react-button__count">{count}</h1>
@@ -42,6 +42,6 @@ export default function ReactButtonTutorial() {
         </li>
         <li className="react-button__li">Set onClick attribute on our button to the clickHandler</li>
       </ol>
-    </>
+    </div>
   );
 }
