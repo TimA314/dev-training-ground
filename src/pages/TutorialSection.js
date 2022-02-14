@@ -10,9 +10,15 @@ const TutorialSection = () => {
   const [tutorials, setTutorials] = useState([]);
 
   useEffect(() => {
+    let isRequestCancelled = false;
     getTutorials()
-      .then((res) => setTutorials(res.data.tutorials))
+      .then((res) =>
+        isRequestCancelled ? null : setTutorials(res.data.tutorials)
+      )
       .catch((err) => console.log(err));
+    return () => {
+      isRequestCancelled = true;
+    };
   }, []);
 
   return (
