@@ -25,7 +25,7 @@ const GettingStarted = () => {
 
                         <li className="item"><p>Copy the url for the github repo to clone to local dev enviroment.</p>
                             <div className="image__container">
-                                <img src={cloneRepoImage} />
+                                <img src={cloneRepoImage} alt=""/>
                             </div>
                         </li>
 
@@ -44,7 +44,7 @@ const GettingStarted = () => {
                         <li className="item"><p>Add a route linking to your page in app.js.
                         </p>
                             <div className="image__container">
-                                <img src={routesImage} />
+                                <img src={routesImage} alt="" />
                             </div>
                         </li>
 

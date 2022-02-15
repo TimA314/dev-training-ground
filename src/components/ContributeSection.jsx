@@ -11,7 +11,7 @@ function ContributeSection() {
         <ContributeSectionContainer>
           <LeftContainer>
             <ImageContainer>
-              <Image src={octocat} />
+              <Image src={octocat} alt=""/>
             </ImageContainer>
           </LeftContainer>
 

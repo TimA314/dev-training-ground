@@ -33,7 +33,7 @@ function PracticeCard() {
           <Description theme={darkMode ? lightheme : darktheme}>
             Test your JS Learning by giving MCQ based test.
           </Description>
-          <Score_Problem_Section theme={darkMode ? lightheme : darktheme}>
+          <SPSection theme={darkMode ? lightheme : darktheme}>
             <TotalProblems>
               <Count>20</Count>
               <Desc>Total Problems</Desc>
@@ -42,7 +42,7 @@ function PracticeCard() {
               <Count>40</Count>
               <Desc>Total Score</Desc>
             </TotalScore>
-          </Score_Problem_Section>
+          </SPSection>
         </MiddleSection>
 
         <StartButton>Start Test</StartButton>
@@ -100,7 +100,7 @@ const Description = styled.div`
   margin-bottom: 20px;
   color: ${(props) => props.theme.bg};
 `;
-const Score_Problem_Section = styled.div`
+const SPSection = styled.div`
   display: flex;
   justify-content: space-around;
   color: ${(props) => props.theme.bg};

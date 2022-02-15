@@ -1,4 +1,4 @@
-import React  from "react";
+import React from "react";
 import Logo from "../assets/images/logo.png";
 import "./Navbar.css";
 import DarkModeToggle from "react-dark-mode-toggle";
@@ -14,19 +14,13 @@ const Navbar = () => {
       <div className={`navbar ${darkMode ? "dark" : "light"}`}>
         <Link to="/">
           <div className="navbar-logo">
-            <img className={`${darkMode ? "white" : ""}`} src={Logo} />
+            <img className={`${darkMode ? "white" : ""}`} src={Logo} alt="" />
           </div>
         </Link>
         <ul className={`${darkMode ? "navbarTextDark" : ""}`}>
-          <Link to="/">
-            Home
-          </Link>
-          <Link to="/tutorial">
-            Tutorials
-          </Link>
-          <Link to="/practice">
-            Practice
-          </Link>
+          <Link to="/">Home</Link>
+          <Link to="/tutorial">Tutorials</Link>
+          <Link to="/practice">Practice</Link>
           <Link to="/contribute">Contribute</Link>
           <Link to="/blogs">Blogs</Link>
         </ul>

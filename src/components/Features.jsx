@@ -20,7 +20,7 @@ function Features() {
             </Card>
             <Card>
               <ImageContainer>
-                <Image src={Notebook} />
+                <Image src={Notebook} alt=""/>
               </ImageContainer>
               <SubHeading>Structured Learning</SubHeading>
               <Desc>
