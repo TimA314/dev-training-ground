@@ -24,10 +24,10 @@
   -webkit-box-shadow: 0px 14px 5px -10px rgba(0, 0, 0, 0.27);
   -moz-box-shadow: 0px 14px 5px -10px rgba(0, 0, 0, 0.27);
 }
-.dark{
-  background-color: #1A1919;
+.dark {
+  background-color: #1a1919;
 }
-.light{
+.light {
   background-color: #fff;
 }
 
@@ -40,10 +40,9 @@
   height: 100%;
   object-fit: contain;
 }
-.navbar-logo > .white{
+.navbar-logo > .white {
   filter: invert(100%);
 }
-
 
 .navbar ul {
   list-style: none;
@@ -74,4 +73,38 @@
 .navbar .navbarTextDark a:hover {
   background-color: #ffff;
   color: #000000;
+}
+.iconHumb {
+  display: none !important;
+}
+/* responsiveness */
+@media screen and (max-width: 650px) {
+  .navbar ul {
+    flex-direction: column;
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    width: 50vw;
+    height: 90vh;
+    background-color: whitesmoke;
+    align-items: center;
+    justify-content: space-around;
+    transition: all 500ms ease-in-out;
+  }
+  .remove {
+    transform: translate(0);
+  }
+  .add {
+    transform: translate(100%);
+  }
+  .navbar .navbarTextDark {
+    background-color: black;
+  }
+  .dark .iconHumb {
+    color: white;
+  }
+  .iconHumb {
+    display: flex !important;
+    cursor: pointer;
+  }
 }
