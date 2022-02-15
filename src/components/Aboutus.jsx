@@ -48,7 +48,7 @@ const Wrapper = styled.div`
   display: flex;
   padding: 20px 30px;
   align-items: center;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   @media (max-width: 768px) {
     flex-direction: column;
   }
