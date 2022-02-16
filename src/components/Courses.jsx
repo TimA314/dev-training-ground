@@ -40,7 +40,7 @@ function Courses() {
 
         <RightContainer>
           <ImageContainer>
-            <Image src={courses} />
+            <Image src={courses} alt=""/>
           </ImageContainer>
         </RightContainer>
       </Wrapper>

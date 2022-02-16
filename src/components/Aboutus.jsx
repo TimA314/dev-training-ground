@@ -9,7 +9,7 @@ function Aboutus() {
       <Wrapper>
         <LeftContainer>
           <ImageContainer>
-            <Image src={about} />
+            <Image src={about} alt=""/>
           </ImageContainer>
         </LeftContainer>
 

@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className={`navbar ${darkMode ? "dark" : "light"}`}>
         <Link to="/">
           <div className="navbar-logo">
-            <img className={`${darkMode ? "white" : ""}`} src={Logo} />
+            <img className={`${darkMode ? "white" : ""}`} src={Logo} alt="" />
           </div>
         </Link>
         <ul

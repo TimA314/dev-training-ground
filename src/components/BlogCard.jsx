@@ -10,7 +10,7 @@ function BlogCard({ title, link }) {
       <Bounce triggerOnce="true">
         <BlogTitleBar>
           <Content>
-            <Arrow src={arrow} />
+            <Arrow src={arrow} alt=""/>
             <BlogTitle>{title}</BlogTitle>
           </Content>
           <BlogBtn>
